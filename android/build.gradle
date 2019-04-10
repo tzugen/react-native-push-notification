@@ -1,17 +1,17 @@
 buildscript {
     repositories {
-        google()
         jcenter()
+        google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.0'
+        classpath 'com.android.tools.build:gradle:3.2.1'
     }
 }
 
 allprojects {
     repositories {
-        google()
         jcenter()
+        google()
     }
 }
 
@@ -47,11 +47,9 @@ dependencies {
     def supportLibVersion = safeExtGet('supportLibVersion', '27.1.1')
     def supportLibMajorVersion = supportLibVersion.split('\\.')[0] as int
     def appCompatLibName =  (supportLibMajorVersion < 20) ? "androidx.appcompat:appcompat" : "com.android.support:appcompat-v7"
-
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     testImplementation 'junit:junit:4.12'
     implementation "$appCompatLibName:$supportLibVersion"
     implementation 'com.facebook.react:react-native:+'
     implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
-    implementation "com.google.firebase:firebase-messaging:${safeExtGet('firebaseMessagingVersion', '+')}"
 }
