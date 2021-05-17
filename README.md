@@ -1,4 +1,6 @@
-# React Native Push Notifications
+
+**This is a libre fork, without dependencies on Goolgle firebase**
+# React Native Push Notifications LIBRE
 
 [![npm version](https://badge.fury.io/js/react-native-push-notification.svg?update=9)](http://badge.fury.io/js/react-native-push-notification)
 [![npm downloads](https://img.shields.io/npm/dm/react-native-push-notification.svg?update=9)](http://badge.fury.io/js/react-native-push-notification)
